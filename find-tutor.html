@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Tutor — Free Tuition Media</title>
+<meta name="description" content="Browse verified tutors across Bangladesh, filter by location, subject and class, and connect directly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FT</span>
+        <span class="logo-text"><span class="l1">Free Tuition</span><span class="l2">MEDIA</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-tuition.html">Find Tuition</a></li>
+        <li><a href="find-tutor.html" class="active">Find Tutor</a></li>
+        <li><a href="post-tuition.html">Post a Tuition</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html" class="login-link">Login</a>
+        <a href="register.html" class="btn btn-dark">Register</a>
+        <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="index.html">Home</a>
+      <a href="find-tuition.html">Find Tuition</a>
+      <a href="find-tutor.html">Find Tutor</a>
+      <a href="post-tuition.html">Post a Tuition</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="btn btn-dark btn-block">Register</a>
+    </div>
+  </div>
+</header>
+
+<section style="background:var(--bg-soft); padding-top:44px; padding-bottom:36px;">
+  <div class="wrap">
+    <span class="eyebrow">850+ Registered Tutors</span>
+    <h1 style="font-size:clamp(26px,3.4vw,38px); margin-top:12px;">Find a verified tutor near you.</h1>
+    <p class="hero-sub" style="margin-top:10px;">Every tutor profile goes through an identity and background check before being listed.</p>
+  </div>
+</section>
+
+<section style="padding-top:44px;">
+  <div class="wrap">
+    <div class="listing-shell">
+
+      <aside class="filter-panel">
+        <h3>Filter Tutors</h3>
+        <form id="tutorFilterForm">
+          <div class="field">
+            <label for="tloc">Location</label>
+            <div class="select-wrap">
+              <select id="tloc" name="location">
+                <option value="">Any location</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="chattogram">Chattogram</option>
+                <option value="sylhet">Sylhet</option>
+                <option value="rajshahi">Rajshahi</option>
+                <option value="khulna">Khulna</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="tsubj">Subject</label>
+            <div class="select-wrap">
+              <select id="tsubj" name="subject">
+                <option value="">Any subject</option>
+                <option value="math">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="english">English</option>
+                <option value="ict">ICT</option>
+                <option value="chemistry">Chemistry</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="tcls">Teaches class</label>
+            <div class="select-wrap">
+              <select id="tcls" name="class">
+                <option value="">Any class</option>
+                <option value="primary">Primary (1–5)</option>
+                <option value="secondary">Secondary (6–10)</option>
+                <option value="hsc">HSC (11–12)</option>
+                <option value="admission">Admission Test</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="tgender">Gender preference</label>
+            <div class="select-wrap">
+              <select id="tgender" name="gender">
+                <option value="">No preference</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Apply Filters</button>
+        </form>
+      </aside>
+
+      <div>
+        <div class="results-head">
+          <p class="results-count">Showing <b>1–6</b> of <b>850</b> tutors</p>
+          <div class="select-wrap" style="width:200px;">
+            <select id="sortBy">
+              <option>Sort: Top rated</option>
+              <option>Sort: Most experienced</option>
+              <option>Sort: Nearest to me</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card-list">
+
+          <div class="item-card">
+            <div class="item-avatar">NR</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Nusrat R. — Physics &amp; Higher Math</div>
+                <span class="item-badge open">Available</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Dhanmondi, Dhaka</span>
+                <span>🎓 BUET, 4th year</span>
+                <span>⭐ 4.9 (62 reviews)</span>
+              </div>
+              <p class="item-desc">5 years of experience teaching HSC Physics and Higher Math, specializing in English medium curriculum.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 2,000<span> / session</span></div>
+                <a href="#" class="btn btn-dark btn-sm">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">KA</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Kamrul A. — Spoken English &amp; IELTS</div>
+                <span class="item-badge open">Available</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Online</span>
+                <span>🎓 MA in English, DU</span>
+                <span>⭐ 4.8 (140 reviews)</span>
+              </div>
+              <p class="item-desc">IELTS trainer with a track record of improving band scores by 1.5+ within 8 weeks.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 1,200<span> / session</span></div>
+                <a href="#" class="btn btn-dark btn-sm">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">FS</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Farzana S. — Biology &amp; Chemistry</div>
+                <span class="item-badge open">Available</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Chattogram</span>
+                <span>🎓 MBBS, CMC</span>
+                <span>⭐ 5.0 (38 reviews)</span>
+              </div>
+              <p class="item-desc">Medical admission specialist, has coached 30+ students into government medical colleges.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 2,500<span> / session</span></div>
+                <a href="#" class="btn btn-dark btn-sm">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">MH</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Mahmud H. — Primary, All Subjects</div>
+                <span class="item-badge open">Available</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Uttara, Dhaka</span>
+                <span>🎓 BSc Education</span>
+                <span>⭐ 4.7 (54 reviews)</span>
+              </div>
+              <p class="item-desc">Specializes in foundational learning for classes 1–5, patient and structured teaching style.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 1,000<span> / session</span></div>
+                <a href="#" class="btn btn-dark btn-sm">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">RQ</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Rafiq Q. — Quran &amp; Tajweed</div>
+                <span class="item-badge open">Available</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Sylhet</span>
+                <span>🎓 Qari, Hafiz</span>
+                <span>⭐ 4.9 (75 reviews)</span>
+              </div>
+              <p class="item-desc">Teaches proper Tajweed and memorization for children and adults, home and online.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 800<span> / session</span></div>
+                <a href="#" class="btn btn-dark btn-sm">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">SD</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Shuvo D. — Guitar &amp; Music Theory</div>
+                <span class="item-badge open">Available</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Online</span>
+                <span>🎓 Berklee (online cert.)</span>
+                <span>⭐ 4.6 (21 reviews)</span>
+              </div>
+              <p class="item-desc">Teaches acoustic and electric guitar to beginners, with a focus on making practice fun.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 1,500<span> / session</span></div>
+                <a href="#" class="btn btn-dark btn-sm">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">→</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-mark">FT</span>
+          <span class="logo-text"><span class="l1">Free Tuition</span><span class="l2">MEDIA</span></span>
+        </div>
+        <p class="footer-about">Bangladesh's tuition connection platform — matching students and guardians with verified tutors across every district, free of charge.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="find-tuition.html">Find Tuition</a></li>
+          <li><a href="find-tutor.html">Find Tutor</a></li>
+          <li><a href="post-tuition.html">Post a Tuition</a></li>
+          <li><a href="register.html">Become a Tutor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Free Tuition Media. All rights reserved.</p>
+      <p>Made in Bangladesh</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

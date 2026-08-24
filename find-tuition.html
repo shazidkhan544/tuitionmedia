@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Tuition — Free Tuition Media</title>
+<meta name="description" content="Browse active tuition requirements across Bangladesh, filter by location, class and subject, and apply directly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FT</span>
+        <span class="logo-text"><span class="l1">Free Tuition</span><span class="l2">MEDIA</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-tuition.html" class="active">Find Tuition</a></li>
+        <li><a href="find-tutor.html">Find Tutor</a></li>
+        <li><a href="post-tuition.html">Post a Tuition</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html" class="login-link">Login</a>
+        <a href="register.html" class="btn btn-dark">Register</a>
+        <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="index.html">Home</a>
+      <a href="find-tuition.html">Find Tuition</a>
+      <a href="find-tutor.html">Find Tutor</a>
+      <a href="post-tuition.html">Post a Tuition</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="btn btn-dark btn-block">Register</a>
+    </div>
+  </div>
+</header>
+
+<section style="padding-bottom:0; background:var(--bg-soft); padding-top:44px; padding-bottom:36px;">
+  <div class="wrap">
+    <span class="eyebrow">1,250+ Active Tuitions</span>
+    <h1 style="font-size:clamp(26px,3.4vw,38px); margin-top:12px;">Find a tuition that fits your schedule.</h1>
+    <p class="hero-sub" style="margin-top:10px;">Browse verified tuition requirements from guardians and students across Bangladesh.</p>
+  </div>
+</section>
+
+<section style="padding-top:44px;">
+  <div class="wrap">
+    <div class="listing-shell">
+
+      <aside class="filter-panel">
+        <h3>Filter Tuitions</h3>
+        <form id="tuitionFilterForm">
+          <div class="field">
+            <label for="loc">Location</label>
+            <div class="select-wrap">
+              <select id="loc" name="location">
+                <option value="">Any location</option>
+                <option value="dhaka" selected>Dhaka</option>
+                <option value="chattogram">Chattogram</option>
+                <option value="sylhet">Sylhet</option>
+                <option value="rajshahi">Rajshahi</option>
+                <option value="khulna">Khulna</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cls">Class</label>
+            <div class="select-wrap">
+              <select id="cls" name="class">
+                <option value="">Any class</option>
+                <option value="primary">Primary (1–5)</option>
+                <option value="secondary">Secondary (6–10)</option>
+                <option value="hsc">HSC (11–12)</option>
+                <option value="admission">Admission Test</option>
+                <option value="university">University</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="subj">Subject</label>
+            <div class="select-wrap">
+              <select id="subj" name="subject">
+                <option value="">Any subject</option>
+                <option value="math">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="english">English</option>
+                <option value="ict">ICT</option>
+                <option value="chemistry">Chemistry</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="mode">Tuition type</label>
+            <div class="select-wrap">
+              <select id="mode" name="mode">
+                <option value="">Any type</option>
+                <option value="home">Home tuition</option>
+                <option value="online">Online</option>
+                <option value="batch">Batch / Group</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Apply Filters</button>
+        </form>
+      </aside>
+
+      <div>
+        <div class="results-head">
+          <p class="results-count">Showing <b>1–6</b> of <b>1,250</b> tuitions</p>
+          <div class="select-wrap" style="width:200px;">
+            <select id="sortBy">
+              <option>Sort: Newest first</option>
+              <option>Sort: Highest budget</option>
+              <option>Sort: Nearest to me</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card-list">
+
+          <div class="item-card">
+            <div class="item-avatar">HM</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">HSC Physics &amp; Higher Math — Home Tuition</div>
+                <span class="item-badge open">Open</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Dhanmondi, Dhaka</span>
+                <span>🎓 Class 11–12</span>
+                <span>🗓️ 4 days/week</span>
+              </div>
+              <p class="item-desc">Looking for an experienced tutor for HSC Physics and Higher Math, evening batches preferred. Female tutor preferred by guardian.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 8,000<span> / month</span></div>
+                <a href="#" class="btn btn-dark btn-sm">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">SI</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Spoken English — Online, Class 8</div>
+                <span class="item-badge open">Open</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Online</span>
+                <span>🎓 Class 8</span>
+                <span>🗓️ 3 days/week</span>
+              </div>
+              <p class="item-desc">Guardian wants conversational English practice alongside grammar for a Class 8 student. Weekday evenings only.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 4,500<span> / month</span></div>
+                <a href="#" class="btn btn-dark btn-sm">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">MA</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Medical Admission Batch — Biology &amp; Chemistry</div>
+                <span class="item-badge open">Open</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Chattogram</span>
+                <span>🎓 Admission Test</span>
+                <span>🗓️ Daily</span>
+              </div>
+              <p class="item-desc">A group of 5 students preparing for medical admission tests need a dedicated Biology and Chemistry coach.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 15,000<span> / month</span></div>
+                <a href="#" class="btn btn-dark btn-sm">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">GP</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Class 3 — All Subjects, Home Tuition</div>
+                <span class="item-badge open">Open</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Uttara, Dhaka</span>
+                <span>🎓 Class 3</span>
+                <span>🗓️ 5 days/week</span>
+              </div>
+              <p class="item-desc">Seeking a patient tutor to build strong fundamentals across all subjects for a Class 3 English medium student.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 6,000<span> / month</span></div>
+                <a href="#" class="btn btn-dark btn-sm">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">IE</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">IELTS Preparation — Target Band 7</div>
+                <span class="item-badge open">Open</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Sylhet</span>
+                <span>🎓 Adult learner</span>
+                <span>🗓️ 3 days/week</span>
+              </div>
+              <p class="item-desc">Working professional preparing for IELTS within 10 weeks, needs focused writing and speaking practice.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 7,500<span> / month</span></div>
+                <a href="#" class="btn btn-dark btn-sm">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-avatar">GT</div>
+            <div class="item-body">
+              <div class="item-top">
+                <div class="item-title">Guitar Lessons — Beginner, Online</div>
+                <span class="item-badge open">Open</span>
+              </div>
+              <div class="item-meta">
+                <span>📍 Online</span>
+                <span>🎓 Age 14</span>
+                <span>🗓️ 2 days/week</span>
+              </div>
+              <p class="item-desc">Teenager interested in learning acoustic guitar basics, looking for a friendly, encouraging tutor.</p>
+              <div class="item-foot">
+                <div class="item-price">৳ 3,000<span> / month</span></div>
+                <a href="#" class="btn btn-dark btn-sm">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">→</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-mark">FT</span>
+          <span class="logo-text"><span class="l1">Free Tuition</span><span class="l2">MEDIA</span></span>
+        </div>
+        <p class="footer-about">Bangladesh's tuition connection platform — matching students and guardians with verified tutors across every district, free of charge.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="find-tuition.html">Find Tuition</a></li>
+          <li><a href="find-tutor.html">Find Tutor</a></li>
+          <li><a href="post-tuition.html">Post a Tuition</a></li>
+          <li><a href="register.html">Become a Tutor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Free Tuition Media. All rights reserved.</p>
+      <p>Made in Bangladesh</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

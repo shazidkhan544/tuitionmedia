@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Free Tuition Media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FT</span>
+        <span class="logo-text"><span class="l1">Free Tuition</span><span class="l2">MEDIA</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-tuition.html">Find Tuition</a></li>
+        <li><a href="find-tutor.html">Find Tutor</a></li>
+        <li><a href="post-tuition.html">Post a Tuition</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html" class="login-link">Login</a>
+        <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="index.html">Home</a>
+      <a href="find-tuition.html">Find Tuition</a>
+      <a href="find-tutor.html">Find Tutor</a>
+      <a href="post-tuition.html">Post a Tuition</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+</header>
+
+<section class="form-page-wrap">
+  <div class="wrap-narrow">
+    <div class="form-shell">
+      <h1>Create your free account.</h1>
+      <p class="form-sub">Join as a guardian/student looking for tutors, or as a tutor looking for tuitions.</p>
+
+      <div class="alert alert-success">Account created. Check your email to verify and get started.</div>
+
+      <form data-demo-submit>
+
+        <div class="role-toggle">
+          <label class="role-option selected">
+            <input type="radio" name="role" value="student" checked>
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v13"/><path d="M6.5 22H19a1 1 0 0 0 1-1v-2H6.5A2.5 2.5 0 0 0 4 21.5v0A2.5 2.5 0 0 0 6.5 22Z"/></svg>
+            </span>
+            <div class="role-name">Guardian / Student</div>
+            <div class="role-desc">I'm looking for a tutor</div>
+          </label>
+          <label class="role-option">
+            <input type="radio" name="role" value="tutor">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span>
+            <div class="role-name">Tutor</div>
+            <div class="role-desc">I want to teach</div>
+          </label>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="rg-name">Full name</label>
+            <input type="text" id="rg-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="rg-phone">Phone number</label>
+            <input type="tel" id="rg-phone" name="phone" placeholder="01XXXXXXXXX" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rg-email">Email address</label>
+          <input type="email" id="rg-email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="rg-location">Area</label>
+            <div class="select-wrap">
+              <select id="rg-location" name="location" required>
+                <option value="">Select area</option>
+                <option>Dhaka</option>
+                <option>Chattogram</option>
+                <option>Sylhet</option>
+                <option>Rajshahi</option>
+                <option>Khulna</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="rg-password">Password</label>
+            <input type="password" id="rg-password" name="password" placeholder="Create a password" required>
+          </div>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="rg-terms" required>
+          <label for="rg-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+        </div>
+
+        <button type="submit" class="btn btn-dark btn-block">Create Account</button>
+      </form>
+
+      <p class="form-foot-note">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.12); padding-top:20px;">
+      <p>© 2026 Free Tuition Media. All rights reserved.</p>
+      <p>Made in Bangladesh</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
